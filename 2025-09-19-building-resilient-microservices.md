@@ -5,7 +5,7 @@ author: "Iman"
 categories: ["Microservices", "Architecture"]
 tags: ["resilience", "fault tolerance", "design patterns", "java", "spring boot"]
 summary: "Key lessons learned from running microservices in production environments, focusing on resilience, fault tolerance, and best practices."
-cover_image: "./img/E2FY2uHGN4qbFwh3TNxog.png"
+cover_image: "img/E2FY2uHGN4qbFwh3TNxog.png"
 ---
 
 ### Introduction
