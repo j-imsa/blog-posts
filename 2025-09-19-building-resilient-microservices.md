@@ -5,8 +5,9 @@ author: "Iman"
 categories: ["Microservices", "Architecture"]
 tags: ["resilience", "fault tolerance", "design patterns", "java", "spring boot"]
 summary: "Key lessons learned from running microservices in production environments, focusing on resilience, fault tolerance, and best practices."
-cover_image: "img/E2FY2uHGN4qbFwh3TNxog.png"
+cover_image: "./img/E2FY2uHGN4qbFwh3TNxog.png"
 ---
+![Partial failures in microservices](./img/E2FY2uHGN4qbFwh3TNxog.png "Partial failures: avoid thread pool exhaustion with bulkheads and circuit breakers")
 
 ### Introduction
 Building resilient microservices is one of the biggest challenges in distributed systems. When services communicate over unreliable networks, failures are inevitable. The goal is not to avoid failures, but to design systems that **gracefully handle them**.
