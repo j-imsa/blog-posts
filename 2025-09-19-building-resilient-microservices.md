@@ -10,11 +10,13 @@ cover_image: "./img/E2FY2uHGN4qbFwh3TNxog.png"
 ![Partial failures in microservices](./img/E2FY2uHGN4qbFwh3TNxog.png "Partial failures: avoid thread pool exhaustion with bulkheads and circuit breakers")
 
 ### Introduction
+
 Building resilient microservices is one of the biggest challenges in distributed systems. When services communicate over unreliable networks, failures are inevitable. The goal is not to avoid failures, but to design systems that **gracefully handle them**.
 
 ---
 
 ### Common Failure Scenarios
+
 1. **Network latency & timeouts** – Services might take too long to respond.
 2. **Cascading failures** – One slow service can cause a chain reaction.
 3. **Resource exhaustion** – Thread pools, DB connections, or memory limits.
@@ -22,6 +24,7 @@ Building resilient microservices is one of the biggest challenges in distributed
 ---
 
 ### Key Patterns for Resilience
+
 - **Circuit Breaker** (e.g., using Resilience4j in Java/Spring Boot)
 - **Bulkhead Isolation** to prevent one failure from taking down the whole system
 - **Retries with Exponential Backoff**
@@ -30,7 +33,6 @@ Building resilient microservices is one of the biggest challenges in distributed
 ```java
 // Example with Resilience4j
 Supplier<String> supplier = () -> restTemplate.getForObject("/slow-service", String.class);
-
 String result = CircuitBreaker.decorateSupplier(circuitBreaker, supplier).get();
 ````
 
