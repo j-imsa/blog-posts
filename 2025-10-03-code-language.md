@@ -1,9 +1,14 @@
 ---
 title: "Architecture Modeling: From UML to Modern Tools"
 date: "2025-10-03"
+author: "Iman"
 categories: [ "Architecture", "Modeling" ]
 tags: [ "uml", "c4", "archimate", "structurizr", "documentation" ]
+summary: "Exploring modern architecture modeling approaches and tools, comparing UML's limitations with the simplicity of the C4 model, and reviewing practical tools like Structurizr and ArchiMate for creating maintainable architecture documentation."
+cover_image: "./img/pexels-pixabay-267669.jpg"
 ---
+
+![Abstract architectural blueprint with technical drawings and geometric patterns representing software architecture design](img/pexels-pixabay-267669.jpg)
 
 # Architecture Modeling Languages and Tools
 
