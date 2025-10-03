@@ -1,9 +1,14 @@
 ---
 title: "OAuth 2.0 & OpenID Connect: Essential Terminology"
 date: "2025-10-03"
+author: "Iman"
 categories: [ "Security", "Authentication" ]
 tags: [ "oauth", "oidc", "security", "authentication", "authorization" ]
+summary: "A comprehensive dictionary explaining OAuth 2.0 and OpenID Connect terminology, including core concepts, roles, token types, grant flows, and security best practices for implementing modern authentication and authorization in applications."
+cover_image: "./img/pexels-cottonbro-8721342.jpg"
 ---
+
+![pexels-cottonbro-8721342.jpg](img/pexels-cottonbro-8721342.jpg "A person using a laptop with security lock icons displayed, representing digital authentication and security")
 
 # OAuth 2.0 & OpenID Connect Dictionary
 
