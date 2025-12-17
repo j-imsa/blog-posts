@@ -50,17 +50,26 @@ Instead of long-running containers, we utilize **Kubernetes Jobs**.
 
 ## Why This Design Wins?
 
-| Feature | Monolithic/VM Approach | Event-Driven KEDA Approach |
-| :--- | :--- | :--- |
-| **Scalability** | Limited by VM size | Theoretically infinite (Cluster limit) |
-| **Cost** | Fixed (Always running) | Pay-per-task (Scale to Zero) |
-| **Reliability** | Single point of failure | Fault-tolerant (Retry mechanisms) |
-| **User Experience** | Slow / Timeout prone | Instant feedback (Async) |
+### Scalability
+*   **Monolithic/VM Approach:** Limited by the size of the virtual machine.
+*   **Event-Driven KEDA Approach:** Theoretically infinite (limited only by cluster resources).
+
+### Cost
+*   **Monolithic/VM Approach:** Fixed cost (resources are always running).
+*   **Event-Driven KEDA Approach:** Pay-per-task (supports Scaling to Zero when idle).
+
+### Reliability
+*   **Monolithic/VM Approach:** Prone to single points of failure.
+*   **Event-Driven KEDA Approach:** Fault-tolerant (includes retry mechanisms).
+
+### User Experience
+*   **Monolithic/VM Approach:** Often slow and prone to timeouts.
+*   **Event-Driven KEDA Approach:** Instant feedback (asynchronous processing).
 
 ---
 
 ## Download the Architecture Blueprint
 
-For a detailed visual breakdown of the wiring between Spring Boot, RabbitMQ, and KEDA, including the YAML configurations for `ScaledObject` resources, download the full architecture report.
+For a detailed visual breakdown of the wiring between Spring Boot, RabbitMQ, and KEDA, including the YAML configurations for "**ScaledObject**" resources, download the full architecture report.
 
 📥 **[Download PDF: Event-Driven Scalability Report](https://github.com/j-imsa/blog-posts/blob/main/assets/System-Architecture.pdf)**
